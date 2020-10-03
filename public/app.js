@@ -274,7 +274,7 @@ async function visualizeTopEconomicalBowlers(topEconomicalBowlers) {
 }
 
 async function visualizeStory(story) {
-  console.log("here",story);
+  //console.log("here",story);
   let seriesData = [];
   for (let year in story) {
     seriesData.push([year, story[year]]);
@@ -285,7 +285,7 @@ async function visualizeStory(story) {
       type: "column"
     },
     title: {
-      text: "5. Top Five Player Won Man of the Match in year 2013"
+      text: "5. Top Ten Player Won Man of the Match in year 2013"
     },
     subtitle: {
       text:
@@ -302,7 +302,7 @@ async function visualizeStory(story) {
     },
     series: [
       {
-        name : "Name",
+        name : "Match",
         data: seriesData
       }
     ]
