@@ -1,3 +1,50 @@
 body {
     font-family: sans-serif;
 }
+
+
+.input-container,
+h1 {
+    margin: 3rem;
+}
+
+.loading {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.input-container .label {
+    font-size: 1.5rem;
+}
+
+.input-container .error {
+    color: red;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+
+input {
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+button {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #FFFFFF;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #FFFFFF;
+    background: #111111;
+    text-align: center;
+    transition: all 0.2s;
+    cursor: pointer;
+}

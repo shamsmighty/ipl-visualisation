@@ -1,9 +1,9 @@
+
 function fetchAndVisualizeData() {
   fetch("./data.json")
     .then(r => r.json())
     .then(visualizeData);
 }
-
 fetchAndVisualizeData();
 
 async function visualizeData(data) {
@@ -13,6 +13,7 @@ async function visualizeData(data) {
   await visualizeMatchesWonByEachTeam(data.matchesWonByEachTeam);
   await visualizeTopEconomicalBowlers(data.topEconomicalBowlers);
   await visualizeStory(data.story);
+  await visualizeDynamic(data.dynamic);
   return;
 }
 
@@ -285,7 +286,7 @@ async function visualizeStory(story) {
       type: "column"
     },
     title: {
-      text: "5. Top Ten Player Won Man of the Match in year 2013"
+      text: "5. Top Ten Player Names Won Man of the Match in year 2013"
     },
     subtitle: {
       text:
@@ -308,3 +309,4 @@ async function visualizeStory(story) {
     ]
   });
 }
+
